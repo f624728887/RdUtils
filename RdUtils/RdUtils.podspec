@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source       = { :git => "https://github.com/f624728887/RdUtils.git", :tag => s.version.to_s }
-  s.source_files  = "RdUtils/RdUtils/*.{h,m}"
+  s.source_files  = "RdUtils/RdUtils/RdUtils/*.{h,m}"
 
   s.framework  = "UIKit", "Foundation"
   s.dependency "Masonry"
