@@ -1,0 +1,273 @@
+//
+//  RdMacroFile.h
+//  MasonryPackagingTest
+//
+//  Created by Rondo_dada on 2018/3/19.
+//  Copyright © 2018年 Rondo. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "UILabel+RdUtils.h"
+#import "RdUtilsManager.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+#define Rd_AnimationDuration    0.26f
+#define Rd_BarButtonTitleFontSize  16
+#define Rd_IGNORE               CGFLOAT_MAX
+
+#define Rd_WeakSelf(type)        __weak typeof(type) weak##type = type;
+#define Rd_StrongSelf(type)      __strong typeof(type) type = weak##type;
+
+#define Rd_SafeAreaTop          safeAreaTop()
+#define Rd_SafeAreaSides        safeAreaSide()
+#define Rd_SafeAreaBottom       safeAreaBottom()
+
+#define Rd_isiPhoneX            isIPhoneXSeries()
+
+#define Rd_isLandscape          ((Rd_ScreenWidth > Rd_ScreenHeight) ? true : false)
+
+
+@interface RdMacroFile : NSObject
+
++ (void)impactFeedback:(UIImpactFeedbackStyle)style;
+
+@end
+
+NS_ASSUME_NONNULL_END
+
+static inline BOOL isIPhoneXSeries() {
+    if (@available(iOS 11.0, *)) {
+        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        if (mainWindow.safeAreaInsets.bottom > 0.0) {
+            return true;
+        }
+        return false;
+    }
+    return false;
+}
+
+static inline CGFloat safeAreaTop() {
+    if (@available(iOS 11.0, *)) {
+        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        return mainWindow.safeAreaInsets.top;
+    }
+    return 0;
+}
+
+static inline CGFloat safeAreaSide() {
+    if (@available(iOS 11.0, *)) {
+        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        return mainWindow.safeAreaInsets.left;
+    }
+    return 0;
+}
+
+static inline CGFloat safeAreaBottom() {
+    if (@available(iOS 11.0, *)) {
+        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        return mainWindow.safeAreaInsets.bottom;
+    }
+    return 0;
+}
+
+static inline CGFloat statusbarHeight() {
+    if (@available(iOS 11.0, *)) {
+        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        return mainWindow.safeAreaInsets.top;
+    }
+    return 20;
+}
+
+
+//#define Rd_ScreenWidth          (CGFloat)[[UIScreen mainScreen] bounds].size.width
+//#define Rd_ScreenHeight         (CGFloat)[[UIScreen mainScreen] bounds].size.height
+//#define Rd_ScreenScale          (CGFloat)[UIScreen mainScreen].scale
+//
+//#define Rd_SafeAreaTop          safeAreaTop()
+//#define Rd_SafeAreaSides        safeAreaSide()
+//#define Rd_SafeAreaBottom       safeAreaBottom()
+//
+//#define Rd_isiPhoneX            isIPhoneXSeries()
+//
+//#define Rd_isLandscape          ((Rd_ScreenWidth > Rd_ScreenHeight) ? true : false)
+//
+//#define Rd_NavibarH             (CGFloat)(Rd_isiPhoneX ? (float)44 + Rd_SafeAreaTop : 64)
+//#define Rd_TabbarH              (CGFloat)((float)49 + Rd_SafeAreaBottom)
+//#define Rd_StatusbarH           (CGFloat)(statusbarHeight())
+//
+//
+//#define Rd_NumberOfSingleLine(min, max) (Rd_ScreenWidth <= 750 ? min : max)
+//
+//
+//#define Rd_IMG_HEI_16_9         (CGFloat)(Rd_ScreenWidth / 16.0 * 9.0)
+//#define Rd_IMG_HEI_4_3          (CGFloat)(Rd_ScreenWidth / 4.0 * 3.0)
+//
+//#define Rd_GET_HEI_16_9(width)  (CGFloat)(width / 16.0 * 9.0)
+//#define Rd_GET_HEI_4_3(width)   (CGFloat)(width / 4.0 * 3.0)
+//
+//#define Rd_GET_WID_16_9(height) (CGFloat)(height / 9.0 * 16.0)
+//#define Rd_GET_WID_4_3(height)  (CGFloat)(height / 3.0 * 4.0)
+//
+//#define Rd_MarginLarge          (CGFloat)(20)
+//#define Rd_MarginMiddle         (CGFloat)(15)
+//#define Rd_MarginDefault        (CGFloat)(10)
+//#define Rd_MarginSmall          (CGFloat)(5)
+//
+//#define Rd_FontSizeS    12
+//#define Rd_FontSizeM    14
+//#define Rd_BarButtonTitleFontSize    16
+//#define Rd_FontSizeXL   22
+//#define Rd_FontSizeXXL  24
+//
+//// rgb颜色转换（16进制->10进制）
+//#define Rd_Color_16(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+//#define Rd_Color_RGB_A(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+//#define Rd_ColorWith(color) [UIColor color]
+//
+//#define Rd_ImageWith(name) [UIImage imageNamed:name]
+//
+//
+//#define Rd_TapticEngine_Light           UIImpactFeedbackGenerator *generator = [[UIImpactFeedbackGenerator alloc] initWithStyle: UIImpactFeedbackStyleLight];\
+//[generator prepare];\
+//[generator impactOccurred];
+//
+//
+//#define Rd_TapticEngine_Medium           UIImpactFeedbackGenerator *generator = [[UIImpactFeedbackGenerator alloc] initWithStyle: UIImpactFeedbackStyleMedium];\
+//[generator prepare];\
+//[generator impactOccurred];
+//
+//
+//#define Rd_TapticEngine_Heavy           UIImpactFeedbackGenerator *generator = [[UIImpactFeedbackGenerator alloc] initWithStyle: UIImpactFeedbackStyleHeavy];\
+//[generator prepare];\
+//[generator impactOccurred];
+//
+//
+//#define Rd_Tapic        if (@available(iOS 10.0, *)) {\
+//    UIImpactFeedbackGenerator *generator = [[UIImpactFeedbackGenerator alloc] initWithStyle: UIImpactFeedbackStyleMedium];\
+//    [generator prepare];\
+//    [generator impactOccurred];\
+//}
+//
+//static inline NSString * getJsonWithDic(NSDictionary *dic) {
+//    if (dic.count == 0) {
+//        return @"{}";
+//    }
+//    NSData *jsonData =[NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:nil];
+//    NSString *text =[[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+//    return text;
+//}
+//
+//static inline NSString * getJsonWithArr(NSArray *arr) {
+//    if (arr.count == 0) {
+//        return @"[]";
+//    }
+//    NSData *jsonData =[NSJSONSerialization dataWithJSONObject:arr options:NSJSONWritingPrettyPrinted error:nil];
+//    NSString *text =[[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+//    return text;
+//}
+//
+//DEPRECATED_MSG_ATTRIBUTE("请使用JSONModel等工具转换")
+//static inline NSArray * getArrWithJson(NSString *string) {
+//    NSData *jsonData = [string dataUsingEncoding:NSASCIIStringEncoding];
+//    
+//    NSArray *arr = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:nil];
+//    
+//    return arr;
+//}
+//
+//DEPRECATED_MSG_ATTRIBUTE("请使用JSONModel等工具转换")
+//static inline NSDictionary * getDicWithJson(NSString *string) {
+//    NSData *jsonData = [string dataUsingEncoding:NSASCIIStringEncoding];
+//    
+//    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:nil];
+//    
+//    return dic;
+//}
+//
+//static inline UIImage * fixImageOrientation(UIImage *aImage) {
+//    
+//    // No-op if the orientation is already correct
+//    if (aImage.imageOrientation == UIImageOrientationUp)
+//        return aImage;
+//    
+//    // We need to calculate the proper transformation to make the image upright.
+//    // We do it in 2 steps: Rotate if Left/Right/Down, and then flip if Mirrored.
+//    CGAffineTransform transform = CGAffineTransformIdentity;
+//    
+//    switch (aImage.imageOrientation) {
+//        case UIImageOrientationDown:
+//        case UIImageOrientationDownMirrored:
+//            transform = CGAffineTransformTranslate(transform, aImage.size.width, aImage.size.height);
+//            transform = CGAffineTransformRotate(transform, M_PI);
+//            break;
+//            
+//        case UIImageOrientationLeft:
+//        case UIImageOrientationLeftMirrored:
+//            transform = CGAffineTransformTranslate(transform, aImage.size.width, 0);
+//            transform = CGAffineTransformRotate(transform, M_PI_2);
+//            break;
+//            
+//        case UIImageOrientationRight:
+//        case UIImageOrientationRightMirrored:
+//            transform = CGAffineTransformTranslate(transform, 0, aImage.size.height);
+//            transform = CGAffineTransformRotate(transform, -M_PI_2);
+//            break;
+//        default:
+//            break;
+//    }
+//    
+//    switch (aImage.imageOrientation) {
+//        case UIImageOrientationUpMirrored:
+//        case UIImageOrientationDownMirrored:
+//            transform = CGAffineTransformTranslate(transform, aImage.size.width, 0);
+//            transform = CGAffineTransformScale(transform, -1, 1);
+//            break;
+//            
+//        case UIImageOrientationLeftMirrored:
+//        case UIImageOrientationRightMirrored:
+//            transform = CGAffineTransformTranslate(transform, aImage.size.height, 0);
+//            transform = CGAffineTransformScale(transform, -1, 1);
+//            break;
+//        default:
+//            break;
+//    }
+//    
+//    // Now we draw the underlying CGImage into a new context, applying the transform
+//    // calculated above.
+//    CGContextRef ctx = CGBitmapContextCreate(NULL, aImage.size.width, aImage.size.height,
+//                                             CGImageGetBitsPerComponent(aImage.CGImage), 0,
+//                                             CGImageGetColorSpace(aImage.CGImage),
+//                                             CGImageGetBitmapInfo(aImage.CGImage));
+//    CGContextConcatCTM(ctx, transform);
+//    switch (aImage.imageOrientation) {
+//        case UIImageOrientationLeft:
+//        case UIImageOrientationLeftMirrored:
+//        case UIImageOrientationRight:
+//        case UIImageOrientationRightMirrored:
+//            // Grr...
+//            CGContextDrawImage(ctx, CGRectMake(0,0,aImage.size.height,aImage.size.width), aImage.CGImage);
+//            break;
+//            
+//        default:
+//            CGContextDrawImage(ctx, CGRectMake(0,0,aImage.size.width,aImage.size.height), aImage.CGImage);
+//            break;
+//    }
+//    
+//    
+//    // And now we just create a new UIImage from the drawing context
+//    CGImageRef cgimg = CGBitmapContextCreateImage(ctx);
+//    UIImage *img = [UIImage imageWithCGImage:cgimg];
+//    CGContextRelease(ctx);
+//    CGImageRelease(cgimg);
+//    return img;
+//    
+//    
+//}
+
+//#ifndef RdMacroFile_h
+//#define RdMacroFile_h
+//
+//
+//#endif /* RdMacroFile_h */
+
