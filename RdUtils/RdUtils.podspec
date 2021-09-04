@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "RdUtils"
+  s.name         = "RondoUtils"
   s.version      = "0.1.0"
   s.summary      = "It is my layout file base on Masonry."
 
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source       = { :git => "https://github.com/f624728887/RdUtils.git", :tag => s.version.to_s }
-  s.source_files  = "RdUtils/RdUtils/RdUtils/*.{h,m}"
+  s.source_files  = "RdUtils/RdUtils/RondoUtils/*.{h,m}"
 
   s.framework  = "UIKit", "Foundation"
   s.dependency "Masonry"
