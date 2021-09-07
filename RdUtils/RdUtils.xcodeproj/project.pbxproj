@@ -8,7 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		1A61AF1F01F7C06F96670EE2 /* libPods-RdUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B9B27468BD681B1167C85D /* libPods-RdUtils.a */; };
-		57040C8D26E3C03F00C3C01A /* RdMacroFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 57040C8C26E3C03F00C3C01A /* RdMacroFile.m */; };
+		5747087726E7362800AE83B1 /* RdMacroFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747085126E7362800AE83B1 /* RdMacroFile.m */; };
+		5747087826E7362800AE83B1 /* RdGCDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747085226E7362800AE83B1 /* RdGCDTools.m */; };
+		5747087926E7362800AE83B1 /* NSMutableAttributedString+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747085426E7362800AE83B1 /* NSMutableAttributedString+RdUtils.m */; };
+		5747087A26E7362800AE83B1 /* RdWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747085626E7362800AE83B1 /* RdWeakProxy.m */; };
+		5747087B26E7362800AE83B1 /* UIScrollView+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747085926E7362800AE83B1 /* UIScrollView+RdUtils.m */; };
+		5747087C26E7362800AE83B1 /* UIButton+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747085A26E7362800AE83B1 /* UIButton+RdUtils.m */; };
+		5747087D26E7362800AE83B1 /* RdUtilsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747085B26E7362800AE83B1 /* RdUtilsManager.m */; };
+		5747087E26E7362800AE83B1 /* UIView+RdMasonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747085E26E7362800AE83B1 /* UIView+RdMasonry.m */; };
+		5747087F26E7362800AE83B1 /* UIView+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747085F26E7362800AE83B1 /* UIView+RdUtils.m */; };
+		5747088026E7362800AE83B1 /* UIViewController+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747086026E7362800AE83B1 /* UIViewController+RdUtils.m */; };
+		5747088126E7362800AE83B1 /* RdOnceTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747086226E7362800AE83B1 /* RdOnceTimer.m */; };
+		5747088226E7362800AE83B1 /* RdRepeatTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747086526E7362800AE83B1 /* RdRepeatTimer.m */; };
+		5747088326E7362800AE83B1 /* UIImage+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747086726E7362800AE83B1 /* UIImage+RdUtils.m */; };
+		5747088426E7362800AE83B1 /* UILabel+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747086A26E7362800AE83B1 /* UILabel+RdUtils.m */; };
+		5747088526E7362800AE83B1 /* RdKeyboardTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747086B26E7362800AE83B1 /* RdKeyboardTools.m */; };
+		5747088626E7362800AE83B1 /* UIImageView+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747086E26E7362800AE83B1 /* UIImageView+RdUtils.m */; };
+		5747088726E7362800AE83B1 /* UIControl+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747087126E7362800AE83B1 /* UIControl+RdUtils.m */; };
+		5747088826E7362800AE83B1 /* UITableView+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747087226E7362800AE83B1 /* UITableView+RdUtils.m */; };
+		5747088926E7362800AE83B1 /* UITextField+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747087526E7362800AE83B1 /* UITextField+RdUtils.m */; };
 		57F8E44426E3BBED0012B7D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E44326E3BBED0012B7D6 /* AppDelegate.m */; };
 		57F8E44726E3BBED0012B7D6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E44626E3BBED0012B7D6 /* SceneDelegate.m */; };
 		57F8E44A26E3BBED0012B7D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E44926E3BBED0012B7D6 /* ViewController.m */; };
@@ -18,24 +36,6 @@
 		57F8E45526E3BBEE0012B7D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E45426E3BBEE0012B7D6 /* main.m */; };
 		57F8E45F26E3BBEE0012B7D6 /* RdUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E45E26E3BBEE0012B7D6 /* RdUtilsTests.m */; };
 		57F8E46A26E3BBEE0012B7D6 /* RdUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E46926E3BBEE0012B7D6 /* RdUtilsUITests.m */; };
-		57F8E4A426E3BC370012B7D6 /* UILabel+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E47826E3BC370012B7D6 /* UILabel+RdUtils.m */; };
-		57F8E4A526E3BC370012B7D6 /* RdGCDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E47926E3BC370012B7D6 /* RdGCDTools.m */; };
-		57F8E4A726E3BC370012B7D6 /* UIImageView+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E47D26E3BC370012B7D6 /* UIImageView+RdUtils.m */; };
-		57F8E4A826E3BC370012B7D6 /* UIControl+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E47F26E3BC370012B7D6 /* UIControl+RdUtils.m */; };
-		57F8E4A926E3BC370012B7D6 /* RdWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E48026E3BC370012B7D6 /* RdWeakProxy.m */; };
-		57F8E4AA26E3BC370012B7D6 /* UIView+RdMasonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E48326E3BC370012B7D6 /* UIView+RdMasonry.m */; };
-		57F8E4AB26E3BC370012B7D6 /* UIImage+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E48426E3BC370012B7D6 /* UIImage+RdUtils.m */; };
-		57F8E4AC26E3BC370012B7D6 /* UITextField+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E48526E3BC370012B7D6 /* UITextField+RdUtils.m */; };
-		57F8E4AD26E3BC370012B7D6 /* RdUtilsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E48626E3BC370012B7D6 /* RdUtilsManager.m */; };
-		57F8E4AE26E3BC370012B7D6 /* UITableView+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E48726E3BC370012B7D6 /* UITableView+RdUtils.m */; };
-		57F8E4AF26E3BC370012B7D6 /* RdOnceTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E48826E3BC370012B7D6 /* RdOnceTimer.m */; };
-		57F8E4B226E3BC370012B7D6 /* UIScrollView+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E48F26E3BC370012B7D6 /* UIScrollView+RdUtils.m */; };
-		57F8E4B326E3BC370012B7D6 /* UIButton+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E49026E3BC370012B7D6 /* UIButton+RdUtils.m */; };
-		57F8E4B426E3BC370012B7D6 /* RdRepeatTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E49326E3BC370012B7D6 /* RdRepeatTimer.m */; };
-		57F8E4B526E3BC370012B7D6 /* RdKeyboardTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E49926E3BC370012B7D6 /* RdKeyboardTools.m */; };
-		57F8E4B626E3BC370012B7D6 /* NSMutableAttributedString+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E49B26E3BC370012B7D6 /* NSMutableAttributedString+RdUtils.m */; };
-		57F8E4B726E3BC370012B7D6 /* UIViewController+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E4A026E3BC370012B7D6 /* UIViewController+RdUtils.m */; };
-		57F8E4B826E3BC370012B7D6 /* UIView+RdUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F8E4A126E3BC370012B7D6 /* UIView+RdUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		57040C8C26E3C03F00C3C01A /* RdMacroFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RdMacroFile.m; sourceTree = "<group>"; };
+		5747085026E7362800AE83B1 /* UIImage+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RdUtils.h"; sourceTree = "<group>"; };
+		5747085126E7362800AE83B1 /* RdMacroFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdMacroFile.m; sourceTree = "<group>"; };
+		5747085226E7362800AE83B1 /* RdGCDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdGCDTools.m; sourceTree = "<group>"; };
+		5747085326E7362800AE83B1 /* RdRepeatTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdRepeatTimer.h; sourceTree = "<group>"; };
+		5747085426E7362800AE83B1 /* NSMutableAttributedString+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+RdUtils.m"; sourceTree = "<group>"; };
+		5747085526E7362800AE83B1 /* RdUtilsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdUtilsHeader.h; sourceTree = "<group>"; };
+		5747085626E7362800AE83B1 /* RdWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdWeakProxy.m; sourceTree = "<group>"; };
+		5747085726E7362800AE83B1 /* UIImageView+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RdUtils.h"; sourceTree = "<group>"; };
+		5747085826E7362800AE83B1 /* UIControl+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+RdUtils.h"; sourceTree = "<group>"; };
+		5747085926E7362800AE83B1 /* UIScrollView+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+RdUtils.m"; sourceTree = "<group>"; };
+		5747085A26E7362800AE83B1 /* UIButton+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RdUtils.m"; sourceTree = "<group>"; };
+		5747085B26E7362800AE83B1 /* RdUtilsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdUtilsManager.m; sourceTree = "<group>"; };
+		5747085C26E7362800AE83B1 /* RdKeyboardTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdKeyboardTools.h; sourceTree = "<group>"; };
+		5747085D26E7362800AE83B1 /* UILabel+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RdUtils.h"; sourceTree = "<group>"; };
+		5747085E26E7362800AE83B1 /* UIView+RdMasonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RdMasonry.m"; sourceTree = "<group>"; };
+		5747085F26E7362800AE83B1 /* UIView+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RdUtils.m"; sourceTree = "<group>"; };
+		5747086026E7362800AE83B1 /* UIViewController+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RdUtils.m"; sourceTree = "<group>"; };
+		5747086126E7362800AE83B1 /* UITableView+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+RdUtils.h"; sourceTree = "<group>"; };
+		5747086226E7362800AE83B1 /* RdOnceTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdOnceTimer.m; sourceTree = "<group>"; };
+		5747086326E7362800AE83B1 /* UITextField+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+RdUtils.h"; sourceTree = "<group>"; };
+		5747086426E7362800AE83B1 /* NSMutableAttributedString+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+RdUtils.h"; sourceTree = "<group>"; };
+		5747086526E7362800AE83B1 /* RdRepeatTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdRepeatTimer.m; sourceTree = "<group>"; };
+		5747086626E7362800AE83B1 /* RdGCDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdGCDTools.h; sourceTree = "<group>"; };
+		5747086726E7362800AE83B1 /* UIImage+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RdUtils.m"; sourceTree = "<group>"; };
+		5747086826E7362800AE83B1 /* RdMacroFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdMacroFile.h; sourceTree = "<group>"; };
+		5747086926E7362800AE83B1 /* UIView+RdMasonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RdMasonry.h"; sourceTree = "<group>"; };
+		5747086A26E7362800AE83B1 /* UILabel+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RdUtils.m"; sourceTree = "<group>"; };
+		5747086B26E7362800AE83B1 /* RdKeyboardTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdKeyboardTools.m; sourceTree = "<group>"; };
+		5747086C26E7362800AE83B1 /* RdUtilsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdUtilsManager.h; sourceTree = "<group>"; };
+		5747086D26E7362800AE83B1 /* UIButton+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RdUtils.h"; sourceTree = "<group>"; };
+		5747086E26E7362800AE83B1 /* UIImageView+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RdUtils.m"; sourceTree = "<group>"; };
+		5747086F26E7362800AE83B1 /* RdWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdWeakProxy.h; sourceTree = "<group>"; };
+		5747087026E7362800AE83B1 /* UIScrollView+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+RdUtils.h"; sourceTree = "<group>"; };
+		5747087126E7362800AE83B1 /* UIControl+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+RdUtils.m"; sourceTree = "<group>"; };
+		5747087226E7362800AE83B1 /* UITableView+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RdUtils.m"; sourceTree = "<group>"; };
+		5747087326E7362800AE83B1 /* UIView+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RdUtils.h"; sourceTree = "<group>"; };
+		5747087426E7362800AE83B1 /* UIViewController+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RdUtils.h"; sourceTree = "<group>"; };
+		5747087526E7362800AE83B1 /* UITextField+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+RdUtils.m"; sourceTree = "<group>"; };
+		5747087626E7362800AE83B1 /* RdOnceTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdOnceTimer.h; sourceTree = "<group>"; };
 		57F8E43F26E3BBED0012B7D6 /* RdUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RdUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F8E44226E3BBED0012B7D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		57F8E44326E3BBED0012B7D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,44 +113,6 @@
 		57F8E46526E3BBEE0012B7D6 /* RdUtilsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RdUtilsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F8E46926E3BBEE0012B7D6 /* RdUtilsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RdUtilsUITests.m; sourceTree = "<group>"; };
 		57F8E46B26E3BBEE0012B7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57F8E47826E3BC370012B7D6 /* UILabel+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RdUtils.m"; sourceTree = "<group>"; };
-		57F8E47926E3BC370012B7D6 /* RdGCDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdGCDTools.m; sourceTree = "<group>"; };
-		57F8E47A26E3BC370012B7D6 /* RdRepeatTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdRepeatTimer.h; sourceTree = "<group>"; };
-		57F8E47C26E3BC370012B7D6 /* UIButton+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RdUtils.h"; sourceTree = "<group>"; };
-		57F8E47D26E3BC370012B7D6 /* UIImageView+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RdUtils.m"; sourceTree = "<group>"; };
-		57F8E47E26E3BC370012B7D6 /* UIScrollView+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+RdUtils.h"; sourceTree = "<group>"; };
-		57F8E47F26E3BC370012B7D6 /* UIControl+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+RdUtils.m"; sourceTree = "<group>"; };
-		57F8E48026E3BC370012B7D6 /* RdWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdWeakProxy.m; sourceTree = "<group>"; };
-		57F8E48126E3BC370012B7D6 /* NSMutableAttributedString+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+RdUtils.h"; sourceTree = "<group>"; };
-		57F8E48226E3BC370012B7D6 /* RdKeyboardTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdKeyboardTools.h; sourceTree = "<group>"; };
-		57F8E48326E3BC370012B7D6 /* UIView+RdMasonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RdMasonry.m"; sourceTree = "<group>"; };
-		57F8E48426E3BC370012B7D6 /* UIImage+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RdUtils.m"; sourceTree = "<group>"; };
-		57F8E48526E3BC370012B7D6 /* UITextField+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+RdUtils.m"; sourceTree = "<group>"; };
-		57F8E48626E3BC370012B7D6 /* RdUtilsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdUtilsManager.m; sourceTree = "<group>"; };
-		57F8E48726E3BC370012B7D6 /* UITableView+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RdUtils.m"; sourceTree = "<group>"; };
-		57F8E48826E3BC370012B7D6 /* RdOnceTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdOnceTimer.m; sourceTree = "<group>"; };
-		57F8E48926E3BC370012B7D6 /* UIViewController+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RdUtils.h"; sourceTree = "<group>"; };
-		57F8E48A26E3BC370012B7D6 /* UIView+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RdUtils.h"; sourceTree = "<group>"; };
-		57F8E48D26E3BC370012B7D6 /* UIImageView+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RdUtils.h"; sourceTree = "<group>"; };
-		57F8E48E26E3BC370012B7D6 /* UIControl+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+RdUtils.h"; sourceTree = "<group>"; };
-		57F8E48F26E3BC370012B7D6 /* UIScrollView+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+RdUtils.m"; sourceTree = "<group>"; };
-		57F8E49026E3BC370012B7D6 /* UIButton+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RdUtils.m"; sourceTree = "<group>"; };
-		57F8E49226E3BC370012B7D6 /* RdUtilsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdUtilsHeader.h; sourceTree = "<group>"; };
-		57F8E49326E3BC370012B7D6 /* RdRepeatTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdRepeatTimer.m; sourceTree = "<group>"; };
-		57F8E49426E3BC370012B7D6 /* RdGCDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdGCDTools.h; sourceTree = "<group>"; };
-		57F8E49526E3BC370012B7D6 /* UILabel+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RdUtils.h"; sourceTree = "<group>"; };
-		57F8E49626E3BC370012B7D6 /* RdMacroFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdMacroFile.h; sourceTree = "<group>"; };
-		57F8E49726E3BC370012B7D6 /* UIImage+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RdUtils.h"; sourceTree = "<group>"; };
-		57F8E49826E3BC370012B7D6 /* UIView+RdMasonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RdMasonry.h"; sourceTree = "<group>"; };
-		57F8E49926E3BC370012B7D6 /* RdKeyboardTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdKeyboardTools.m; sourceTree = "<group>"; };
-		57F8E49A26E3BC370012B7D6 /* RdWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdWeakProxy.h; sourceTree = "<group>"; };
-		57F8E49B26E3BC370012B7D6 /* NSMutableAttributedString+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+RdUtils.m"; sourceTree = "<group>"; };
-		57F8E49C26E3BC370012B7D6 /* RdUtilsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdUtilsManager.h; sourceTree = "<group>"; };
-		57F8E49D26E3BC370012B7D6 /* UITextField+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+RdUtils.h"; sourceTree = "<group>"; };
-		57F8E4A026E3BC370012B7D6 /* UIViewController+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RdUtils.m"; sourceTree = "<group>"; };
-		57F8E4A126E3BC370012B7D6 /* UIView+RdUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RdUtils.m"; sourceTree = "<group>"; };
-		57F8E4A226E3BC370012B7D6 /* RdOnceTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdOnceTimer.h; sourceTree = "<group>"; };
-		57F8E4A326E3BC370012B7D6 /* UITableView+RdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+RdUtils.h"; sourceTree = "<group>"; };
 		AC6B94B78810A5129BD39250 /* Pods-RdUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RdUtils.release.xcconfig"; path = "Target Support Files/Pods-RdUtils/Pods-RdUtils.release.xcconfig"; sourceTree = "<group>"; };
 		C6B9B27468BD681B1167C85D /* libPods-RdUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RdUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF362CCBD602AFFDBFA9BC4C /* Pods-RdUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RdUtils.debug.xcconfig"; path = "Target Support Files/Pods-RdUtils/Pods-RdUtils.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +144,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5747084F26E7362800AE83B1 /* RondoUtils */ = {
+			isa = PBXGroup;
+			children = (
+				5747085526E7362800AE83B1 /* RdUtilsHeader.h */,
+				5747086826E7362800AE83B1 /* RdMacroFile.h */,
+				5747085126E7362800AE83B1 /* RdMacroFile.m */,
+				5747086C26E7362800AE83B1 /* RdUtilsManager.h */,
+				5747085B26E7362800AE83B1 /* RdUtilsManager.m */,
+				5747086926E7362800AE83B1 /* UIView+RdMasonry.h */,
+				5747085E26E7362800AE83B1 /* UIView+RdMasonry.m */,
+				5747087326E7362800AE83B1 /* UIView+RdUtils.h */,
+				5747085F26E7362800AE83B1 /* UIView+RdUtils.m */,
+				5747085D26E7362800AE83B1 /* UILabel+RdUtils.h */,
+				5747086A26E7362800AE83B1 /* UILabel+RdUtils.m */,
+				5747085026E7362800AE83B1 /* UIImage+RdUtils.h */,
+				5747086726E7362800AE83B1 /* UIImage+RdUtils.m */,
+				5747086D26E7362800AE83B1 /* UIButton+RdUtils.h */,
+				5747085A26E7362800AE83B1 /* UIButton+RdUtils.m */,
+				5747085826E7362800AE83B1 /* UIControl+RdUtils.h */,
+				5747087126E7362800AE83B1 /* UIControl+RdUtils.m */,
+				5747086326E7362800AE83B1 /* UITextField+RdUtils.h */,
+				5747087526E7362800AE83B1 /* UITextField+RdUtils.m */,
+				5747086126E7362800AE83B1 /* UITableView+RdUtils.h */,
+				5747087226E7362800AE83B1 /* UITableView+RdUtils.m */,
+				5747087026E7362800AE83B1 /* UIScrollView+RdUtils.h */,
+				5747085926E7362800AE83B1 /* UIScrollView+RdUtils.m */,
+				5747085726E7362800AE83B1 /* UIImageView+RdUtils.h */,
+				5747086E26E7362800AE83B1 /* UIImageView+RdUtils.m */,
+				5747087426E7362800AE83B1 /* UIViewController+RdUtils.h */,
+				5747086026E7362800AE83B1 /* UIViewController+RdUtils.m */,
+				5747086426E7362800AE83B1 /* NSMutableAttributedString+RdUtils.h */,
+				5747085426E7362800AE83B1 /* NSMutableAttributedString+RdUtils.m */,
+				5747086626E7362800AE83B1 /* RdGCDTools.h */,
+				5747085226E7362800AE83B1 /* RdGCDTools.m */,
+				5747087626E7362800AE83B1 /* RdOnceTimer.h */,
+				5747086226E7362800AE83B1 /* RdOnceTimer.m */,
+				5747086F26E7362800AE83B1 /* RdWeakProxy.h */,
+				5747085626E7362800AE83B1 /* RdWeakProxy.m */,
+				5747085326E7362800AE83B1 /* RdRepeatTimer.h */,
+				5747086526E7362800AE83B1 /* RdRepeatTimer.m */,
+				5747085C26E7362800AE83B1 /* RdKeyboardTools.h */,
+				5747086B26E7362800AE83B1 /* RdKeyboardTools.m */,
+			);
+			path = RondoUtils;
+			sourceTree = "<group>";
+		};
 		57F8E43626E3BBED0012B7D6 = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +221,7 @@
 				57F8E44626E3BBED0012B7D6 /* SceneDelegate.m */,
 				57F8E44826E3BBED0012B7D6 /* ViewController.h */,
 				57F8E44926E3BBED0012B7D6 /* ViewController.m */,
-				57F8E47726E3BC370012B7D6 /* RdUtils */,
+				5747084F26E7362800AE83B1 /* RondoUtils */,
 				57F8E44B26E3BBED0012B7D6 /* Main.storyboard */,
 				57F8E44E26E3BBEE0012B7D6 /* Assets.xcassets */,
 				57F8E45026E3BBEE0012B7D6 /* LaunchScreen.storyboard */,
@@ -201,52 +247,6 @@
 				57F8E46B26E3BBEE0012B7D6 /* Info.plist */,
 			);
 			path = RdUtilsUITests;
-			sourceTree = "<group>";
-		};
-		57F8E47726E3BC370012B7D6 /* RdUtils */ = {
-			isa = PBXGroup;
-			children = (
-				57F8E49226E3BC370012B7D6 /* RdUtilsHeader.h */,
-				57F8E49C26E3BC370012B7D6 /* RdUtilsManager.h */,
-				57F8E48626E3BC370012B7D6 /* RdUtilsManager.m */,
-				57F8E49626E3BC370012B7D6 /* RdMacroFile.h */,
-				57040C8C26E3C03F00C3C01A /* RdMacroFile.m */,
-				57F8E49826E3BC370012B7D6 /* UIView+RdMasonry.h */,
-				57F8E48326E3BC370012B7D6 /* UIView+RdMasonry.m */,
-				57F8E48A26E3BC370012B7D6 /* UIView+RdUtils.h */,
-				57F8E4A126E3BC370012B7D6 /* UIView+RdUtils.m */,
-				57F8E49526E3BC370012B7D6 /* UILabel+RdUtils.h */,
-				57F8E47826E3BC370012B7D6 /* UILabel+RdUtils.m */,
-				57F8E49726E3BC370012B7D6 /* UIImage+RdUtils.h */,
-				57F8E48426E3BC370012B7D6 /* UIImage+RdUtils.m */,
-				57F8E47C26E3BC370012B7D6 /* UIButton+RdUtils.h */,
-				57F8E49026E3BC370012B7D6 /* UIButton+RdUtils.m */,
-				57F8E48E26E3BC370012B7D6 /* UIControl+RdUtils.h */,
-				57F8E47F26E3BC370012B7D6 /* UIControl+RdUtils.m */,
-				57F8E49D26E3BC370012B7D6 /* UITextField+RdUtils.h */,
-				57F8E48526E3BC370012B7D6 /* UITextField+RdUtils.m */,
-				57F8E4A326E3BC370012B7D6 /* UITableView+RdUtils.h */,
-				57F8E48726E3BC370012B7D6 /* UITableView+RdUtils.m */,
-				57F8E47E26E3BC370012B7D6 /* UIScrollView+RdUtils.h */,
-				57F8E48F26E3BC370012B7D6 /* UIScrollView+RdUtils.m */,
-				57F8E48D26E3BC370012B7D6 /* UIImageView+RdUtils.h */,
-				57F8E47D26E3BC370012B7D6 /* UIImageView+RdUtils.m */,
-				57F8E48926E3BC370012B7D6 /* UIViewController+RdUtils.h */,
-				57F8E4A026E3BC370012B7D6 /* UIViewController+RdUtils.m */,
-				57F8E48126E3BC370012B7D6 /* NSMutableAttributedString+RdUtils.h */,
-				57F8E49B26E3BC370012B7D6 /* NSMutableAttributedString+RdUtils.m */,
-				57F8E49426E3BC370012B7D6 /* RdGCDTools.h */,
-				57F8E47926E3BC370012B7D6 /* RdGCDTools.m */,
-				57F8E4A226E3BC370012B7D6 /* RdOnceTimer.h */,
-				57F8E48826E3BC370012B7D6 /* RdOnceTimer.m */,
-				57F8E49A26E3BC370012B7D6 /* RdWeakProxy.h */,
-				57F8E48026E3BC370012B7D6 /* RdWeakProxy.m */,
-				57F8E47A26E3BC370012B7D6 /* RdRepeatTimer.h */,
-				57F8E49326E3BC370012B7D6 /* RdRepeatTimer.m */,
-				57F8E48226E3BC370012B7D6 /* RdKeyboardTools.h */,
-				57F8E49926E3BC370012B7D6 /* RdKeyboardTools.m */,
-			);
-			path = RdUtils;
 			sourceTree = "<group>";
 		};
 		6207D696E313E2D2D29F2061 /* Frameworks */ = {
@@ -421,29 +421,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57F8E4B426E3BC370012B7D6 /* RdRepeatTimer.m in Sources */,
-				57F8E4A826E3BC370012B7D6 /* UIControl+RdUtils.m in Sources */,
-				57F8E4B626E3BC370012B7D6 /* NSMutableAttributedString+RdUtils.m in Sources */,
-				57F8E4B726E3BC370012B7D6 /* UIViewController+RdUtils.m in Sources */,
-				57F8E4AD26E3BC370012B7D6 /* RdUtilsManager.m in Sources */,
-				57F8E4B526E3BC370012B7D6 /* RdKeyboardTools.m in Sources */,
+				5747087E26E7362800AE83B1 /* UIView+RdMasonry.m in Sources */,
+				5747087F26E7362800AE83B1 /* UIView+RdUtils.m in Sources */,
+				5747088226E7362800AE83B1 /* RdRepeatTimer.m in Sources */,
+				5747088526E7362800AE83B1 /* RdKeyboardTools.m in Sources */,
+				5747088026E7362800AE83B1 /* UIViewController+RdUtils.m in Sources */,
+				5747088826E7362800AE83B1 /* UITableView+RdUtils.m in Sources */,
+				5747087A26E7362800AE83B1 /* RdWeakProxy.m in Sources */,
 				57F8E44A26E3BBED0012B7D6 /* ViewController.m in Sources */,
-				57F8E4A926E3BC370012B7D6 /* RdWeakProxy.m in Sources */,
-				57F8E4B826E3BC370012B7D6 /* UIView+RdUtils.m in Sources */,
-				57F8E4AF26E3BC370012B7D6 /* RdOnceTimer.m in Sources */,
-				57F8E4AC26E3BC370012B7D6 /* UITextField+RdUtils.m in Sources */,
+				5747087D26E7362800AE83B1 /* RdUtilsManager.m in Sources */,
+				5747088926E7362800AE83B1 /* UITextField+RdUtils.m in Sources */,
+				5747088326E7362800AE83B1 /* UIImage+RdUtils.m in Sources */,
+				5747087926E7362800AE83B1 /* NSMutableAttributedString+RdUtils.m in Sources */,
+				5747088626E7362800AE83B1 /* UIImageView+RdUtils.m in Sources */,
+				5747087C26E7362800AE83B1 /* UIButton+RdUtils.m in Sources */,
+				5747087B26E7362800AE83B1 /* UIScrollView+RdUtils.m in Sources */,
+				5747088126E7362800AE83B1 /* RdOnceTimer.m in Sources */,
+				5747087726E7362800AE83B1 /* RdMacroFile.m in Sources */,
+				5747087826E7362800AE83B1 /* RdGCDTools.m in Sources */,
+				5747088426E7362800AE83B1 /* UILabel+RdUtils.m in Sources */,
 				57F8E44426E3BBED0012B7D6 /* AppDelegate.m in Sources */,
-				57F8E4B326E3BC370012B7D6 /* UIButton+RdUtils.m in Sources */,
-				57F8E4A526E3BC370012B7D6 /* RdGCDTools.m in Sources */,
 				57F8E45526E3BBEE0012B7D6 /* main.m in Sources */,
-				57F8E4B226E3BC370012B7D6 /* UIScrollView+RdUtils.m in Sources */,
-				57F8E4A426E3BC370012B7D6 /* UILabel+RdUtils.m in Sources */,
+				5747088726E7362800AE83B1 /* UIControl+RdUtils.m in Sources */,
 				57F8E44726E3BBED0012B7D6 /* SceneDelegate.m in Sources */,
-				57F8E4AE26E3BC370012B7D6 /* UITableView+RdUtils.m in Sources */,
-				57040C8D26E3C03F00C3C01A /* RdMacroFile.m in Sources */,
-				57F8E4A726E3BC370012B7D6 /* UIImageView+RdUtils.m in Sources */,
-				57F8E4AA26E3BC370012B7D6 /* UIView+RdMasonry.m in Sources */,
-				57F8E4AB26E3BC370012B7D6 /* UIImage+RdUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

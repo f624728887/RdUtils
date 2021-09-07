@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #define Rd_AnimationDuration    0.26f
 #define Rd_BarButtonTitleFontSize  16
-#define Rd_IGNORE               CGFLOAT_MAX
+#define Rd_IGNORE               (CGFloat)CGFLOAT_MAX
 
 #define Rd_WeakSelf(type)        __weak typeof(type) weak##type = type;
 #define Rd_StrongSelf(type)      __strong typeof(type) type = weak##type;

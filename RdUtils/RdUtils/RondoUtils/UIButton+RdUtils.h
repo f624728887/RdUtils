@@ -77,74 +77,74 @@ typedef NS_ENUM(NSUInteger, RdButtonImageType) {
 
 
 
-#pragma mark - 以下方法废弃使用
-
-+ (instancetype _Nonnull)rd_BtnImage:(NSString *_Nonnull)imgName DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-+ (instancetype _Nonnull)rd_BtnImage:(NSString *_Nonnull)imgName responder:(void (^_Nullable)(UIButton *_Nonnull sender))block DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-+ (instancetype _Nonnull)rd_BtnTitle:(NSString *_Nonnull)title DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-+ (instancetype _Nonnull)rd_BtnTitle:(NSString *_Nonnull)title responder:(void (^_Nullable)(UIButton *_Nonnull sender))block DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-+ (instancetype _Nonnull)rd_BtnTitle:(NSString *_Nonnull)title image:(NSString *_Nonnull)imgName DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-+ (instancetype _Nonnull)rd_BtnTitle:(NSString *_Nonnull)title image:(NSString *_Nonnull)imgName responder:(void (^_Nullable)(UIButton *_Nonnull sender))block DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// color为 nil 时背景色为clearColor
-+ (instancetype _Nonnull)rd_BtnBGColor:(UIColor *_Nullable)bgColor superView:(UIView *_Nonnull)superView DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-+ (instancetype _Nonnull)rd_BtnBGColor:(UIColor *_Nullable)bgColor superView:(UIView *_Nonnull)superView responder:(void (^_Nullable)(UIButton *_Nonnull sender))block DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button title （ rd_setXXX(title) ）
-- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nonnull title))rd_setButtonTitle DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button 选中 title （ rd_setXXX(title) ）
-- (UIButton *_Nonnull(^_Nonnull)(NSString *_Nonnull title))rd_setButtonTitleSelected DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button title 字号 （ rd_setXXX(fontSize) ）
-- (UIButton *_Nonnull(^_Nonnull)(CGFloat fontSize))rd_setButtonTitleFontSize DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button title 字体和字号 （ rd_setXXX(fontName, fontSize) ） fontName为 nil 时为默认
-- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nullable fontName, CGFloat fontSize))rd_setButtonTitleFont DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button title颜色 （ rd_setXXX(color) ）
-- (UIButton *_Nonnull(^_Nonnull)(UIColor * _Nonnull color))rd_setButtonTitleColorNormal DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button title颜色 （ rd_setXXX(color) ）
-- (UIButton *_Nonnull(^_Nonnull)(UIColor * _Nonnull color))rd_setButtonTitleColorSelected DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-- (UIButton *_Nonnull(^_Nonnull)(UIColor * _Nonnull color))rd_setButtonTitleColorDisabled DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button 高亮 title颜色 （ rd_setXXX(color) ）
-- (UIButton *_Nonnull(^_Nonnull)(UIColor * _Nonnull color))rd_setButtonTitleColorHightlighted DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button normal 背景颜色（颜色转图片） （ rd_setXXX(color) ）
-- (UIButton *_Nonnull(^_Nonnull)(UIColor * _Nonnull color))rd_setButtonBgColorNormal DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button selected 背景颜色（颜色转图片） （ rd_setXXX(color) ）
-- (UIButton *_Nonnull(^_Nonnull)(UIColor * _Nonnull color))rd_setButtonBgColorSelected DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button hightlighted 背景颜色（颜色转图片） （ rd_setXXX(color) ）
-- (UIButton *_Nonnull(^_Nonnull)(UIColor * _Nonnull color))rd_setButtonBgColorHightlighted DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button normal 背景图片（ rd_setXXX(image) ）
-- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nonnull imageName))rd_setButtonBgImageNormal DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button Selected 背景图片（ rd_setXXX(image) ）
-- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nonnull imageName))rd_setButtonBgImageSelected DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button hightlighted 背景图片（ rd_setXXX(image) ）
-- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nonnull imageName))rd_setButtonBgImageHightlighted DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button normal 图片 （ rd_setXXX(imageName) ）
-- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nonnull imageName))rd_setButtonImageNormal DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button Selected 图片 （ rd_setXXX(imageName) ）
-- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nonnull imageName))rd_setButtonImageSelected DEPRECATED_MSG_ATTRIBUTE("废弃方法");
-
-/// 设置button Disabled 图片 （ rd_setXXX(imageName) ）
-- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nonnull imageName))rd_setButtonImageDisabled DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//#pragma mark - 以下方法废弃使用
+//
+//+ (instancetype _Nonnull)rd_BtnImage:(NSString *_Nonnull)imgName DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+//+ (instancetype _Nonnull)rd_BtnImage:(NSString *_Nonnull)imgName responder:(void (^_Nullable)(UIButton *_Nonnull sender))block DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+//+ (instancetype _Nonnull)rd_BtnTitle:(NSString *_Nonnull)title DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+//+ (instancetype _Nonnull)rd_BtnTitle:(NSString *_Nonnull)title responder:(void (^_Nullable)(UIButton *_Nonnull sender))block DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+//+ (instancetype _Nonnull)rd_BtnTitle:(NSString *_Nonnull)title image:(NSString *_Nonnull)imgName DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+//+ (instancetype _Nonnull)rd_BtnTitle:(NSString *_Nonnull)title image:(NSString *_Nonnull)imgName responder:(void (^_Nullable)(UIButton *_Nonnull sender))block DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// color为 nil 时背景色为clearColor
+//+ (instancetype _Nonnull)rd_BtnBGColor:(UIColor *_Nullable)bgColor superView:(UIView *_Nonnull)superView DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+//+ (instancetype _Nonnull)rd_BtnBGColor:(UIColor *_Nullable)bgColor superView:(UIView *_Nonnull)superView responder:(void (^_Nullable)(UIButton *_Nonnull sender))block DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button title （ rd_setXXX(title) ）
+//- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nonnull title))rd_setButtonTitle DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button 选中 title （ rd_setXXX(title) ）
+//- (UIButton *_Nonnull(^_Nonnull)(NSString *_Nonnull title))rd_setButtonTitleSelected DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button title 字号 （ rd_setXXX(fontSize) ）
+//- (UIButton *_Nonnull(^_Nonnull)(CGFloat fontSize))rd_setButtonTitleFontSize DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button title 字体和字号 （ rd_setXXX(fontName, fontSize) ） fontName为 nil 时为默认
+//- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nullable fontName, CGFloat fontSize))rd_setButtonTitleFont DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button title颜色 （ rd_setXXX(color) ）
+//- (UIButton *_Nonnull(^_Nonnull)(UIColor * _Nonnull color))rd_setButtonTitleColorNormal DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button title颜色 （ rd_setXXX(color) ）
+//- (UIButton *_Nonnull(^_Nonnull)(UIColor * _Nonnull color))rd_setButtonTitleColorSelected DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+//- (UIButton *_Nonnull(^_Nonnull)(UIColor * _Nonnull color))rd_setButtonTitleColorDisabled DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button 高亮 title颜色 （ rd_setXXX(color) ）
+//- (UIButton *_Nonnull(^_Nonnull)(UIColor * _Nonnull color))rd_setButtonTitleColorHightlighted DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button normal 背景颜色（颜色转图片） （ rd_setXXX(color) ）
+//- (UIButton *_Nonnull(^_Nonnull)(UIColor * _Nonnull color))rd_setButtonBgColorNormal DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button selected 背景颜色（颜色转图片） （ rd_setXXX(color) ）
+//- (UIButton *_Nonnull(^_Nonnull)(UIColor * _Nonnull color))rd_setButtonBgColorSelected DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button hightlighted 背景颜色（颜色转图片） （ rd_setXXX(color) ）
+//- (UIButton *_Nonnull(^_Nonnull)(UIColor * _Nonnull color))rd_setButtonBgColorHightlighted DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button normal 背景图片（ rd_setXXX(image) ）
+//- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nonnull imageName))rd_setButtonBgImageNormal DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button Selected 背景图片（ rd_setXXX(image) ）
+//- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nonnull imageName))rd_setButtonBgImageSelected DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button hightlighted 背景图片（ rd_setXXX(image) ）
+//- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nonnull imageName))rd_setButtonBgImageHightlighted DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button normal 图片 （ rd_setXXX(imageName) ）
+//- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nonnull imageName))rd_setButtonImageNormal DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button Selected 图片 （ rd_setXXX(imageName) ）
+//- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nonnull imageName))rd_setButtonImageSelected DEPRECATED_MSG_ATTRIBUTE("废弃方法");
+//
+///// 设置button Disabled 图片 （ rd_setXXX(imageName) ）
+//- (UIButton *_Nonnull(^_Nonnull)(NSString * _Nonnull imageName))rd_setButtonImageDisabled DEPRECATED_MSG_ATTRIBUTE("废弃方法");
 
 @end
 
