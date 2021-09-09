@@ -91,18 +91,14 @@ typedef NS_ENUM(NSUInteger, RdBarButtonType) {
 - (UIButton *)rd_SetBtnPos:(RdBarButtonType)pos type:(RdBarButtonType)type content:(NSString *)content responder:(void (^)(UIButton *sender))block{
     UIButton *btn;
     CGFloat width = 0.0;
+    btn = [[UIButton alloc] init];
+    [btn rd_setButtonAction:block];
     if (type == RdBarButtonTypeJustTitle) {
-        btn = [[UIButton alloc] init];
         btn.rd_setTitleWithState(content, UIControlStateNormal).rd_setTitleColorWithState(UIColor.blackColor, UIControlStateNormal);
-        [btn rd_setButtonAction:block];
-//        btn = [UIButton rd_BtnTitle:content responder:block];
-//        btn.rd_setButtonTitleFontSize(Rd_BarButtonTitleFontSize).rd_setButtonTitleColorNormal(UIColor.blackColor);
         width = [self rd_getBtnWidth:[btn.titleLabel rd_getLabelStringWidth]];
     }
     else if (type == RdBarButtonTypeJustImg) {
-        btn = [[UIButton alloc] init];
         btn.rd_setImageWithState(content, UIControlStateNormal);
-//        btn = [UIButton rd_BtnImage:content responder:block];
         width = [self rd_getBtnWidth:btn.imageView.image.size.width];
     }
     btn.frame = CGRectMake(0, 0, width, 44);
@@ -124,11 +120,10 @@ typedef NS_ENUM(NSUInteger, RdBarButtonType) {
 
 - (UIButton *)rd_SetBtnPos:(RdBarButtonType)pos title:(NSString *)title imgName:(NSString *)imageName responder:(void (^)(UIButton *sender))block{
     UIButton *btn = [[UIButton alloc] init];
+    [btn rd_setButtonAction:block];
     btn.rd_setTitleWithState(title, UIControlStateNormal).rd_setTitleColorWithState(UIColor.blackColor, UIControlStateNormal).rd_setImageWithState(imageName, UIControlStateNormal);
-//    UIButton *btn = [UIButton rd_BtnTitle:title image:imageName responder:block];
     CGFloat width = [self rd_getBtnWidth:(btn.imageView.image.size.width + [btn.titleLabel rd_getLabelStringWidth])];
     btn.frame = CGRectMake(0, 0, width, 44);
-//    btn.rd_setButtonTitleFontSize(Rd_BarButtonTitleFontSize).rd_setButtonTitleColorNormal(UIColor.blackColor);
     
     if (pos == RdBarButtonTypeLeft) {
         [self rd_BarBtnItemsAddLeftBtn:btn];
