@@ -14,20 +14,8 @@
  *等于
  */
 /// 设置宽高（ rd_widthAndHeightValue() ）
-- (UIView *_Nonnull(^_Nonnull)(CGFloat value))rd_squareLengthValue;
 - (UIView *_Nonnull(^_Nonnull)(CGFloat width, CGFloat height))rd_sizeValue;
 
-/**
- *小于等于
- */
-/// 设置宽高（ rd_widthAndHeightMaxValue() ）
-- (UIView *_Nonnull(^_Nonnull)(CGFloat value))rd_widthAndHeightMaxValue;
-
-/**
- *大于等于
- */
-/// 设置宽高（ rd_widthAndHeightMinValue() ）
-- (UIView *_Nonnull(^_Nonnull)(CGFloat value))rd_widthAndHeightMinValue;
 
 /**
  *等于
@@ -273,23 +261,22 @@
 - (UIView *_Nonnull(^_Nonnull)(UIView * _Nullable otherView, CGFloat offset, CGFloat priority))rd_leftToCenterXPriorityOf;
 - (UIView *_Nonnull(^_Nonnull)(UIView * _Nullable otherView, CGFloat offset, CGFloat priority))rd_rightToCenterXPriorityOf;
 
-/**
- *优先级
- */
-/// 数值越大优先级越高.最高1000. high = 750, medium = 250~750, Low = 250.
 
-/// 水平添加View （ rd_addHorizontalSubview(view, 10) ）
-- (UIView *_Nonnull(^_Nonnull)(UIView *_Nonnull chileView, CGFloat interval))rd_addHorizontalSubview;
-
+/// 水平添加View
 - (void)rdAddHorizontalView:(UIView * _Nonnull)chileView interval:(CGFloat)interval;
 
-/// 垂直添加View （ rd_addVerticalSubview(view, 10) ）
-- (UIView *_Nonnull(^_Nonnull)(UIView *_Nonnull chileView, CGFloat interval))rd_addVerticalSubview;
-
+/// 垂直添加View
 - (void)rdAddVerticalView:(UIView * _Nonnull)chileView interval:(CGFloat)interval;
 
-- (UIView *_Nonnull(^_Nonnull)(UIView *_Nonnull chileView, CGFloat chileWidth))rd_addCollectionView;
-
+/// 田字格排列，当缩放因子为2倍时，
+/// 布局值最小值为0.5，布局取值会取最接近整数或0.5，
+/// （eg. 12.4 会变成 12.5）;
+/// 所以小于0.5的直接取整，大于0.5的直接取0.5，防止值变大。
+/// 当缩放因子为3倍时，
+/// 布局之最小值为0.33333，布局值会去最接近0.333、0.6667、整数。
+/// （eg. 12.30 会变成12.3333）；
+/// 所以为了防止值变大，小数小于0.4取整。
+/// 大于等于0.4且小于0.7取0.3，大于等于0.7取0.6。
 - (void)rdAddCollectionView:(UIView *_Nonnull)chileView width:(CGFloat)chileWidth;
 
 - (void)rd_removeConstraint;

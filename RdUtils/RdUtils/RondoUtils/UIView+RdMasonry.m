@@ -15,44 +15,11 @@
 /**
  *等于
  */
-- (UIView *_Nonnull(^_Nonnull)(CGFloat value))rd_squareLengthValue{
-    return ^(CGFloat value) {
-        [self mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.width.height.equalTo(@(value));
-        }];
-        return self;
-    };
-}
-
 - (UIView *_Nonnull(^_Nonnull)(CGFloat width, CGFloat height))rd_sizeValue{
     return ^(CGFloat width, CGFloat height) {
         [self mas_updateConstraints:^(MASConstraintMaker *make) {
             make.width.equalTo(@(width));
             make.height.equalTo(@(height));
-        }];
-        return self;
-    };
-}
-
-/**
- *小于等于
- */
-- (UIView *_Nonnull(^_Nonnull)(CGFloat value))rd_widthAndHeightMaxValue{
-    return ^(CGFloat value) {
-        [self mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.width.height.lessThanOrEqualTo(@(value));
-        }];
-        return self;
-    };
-}
-
-/**
- *大于等于
- */
-- (UIView *_Nonnull(^_Nonnull)(CGFloat value))rd_widthAndHeightMinValue{
-    return ^(CGFloat value) {
-        [self mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.width.height.greaterThanOrEqualTo(@(value));
         }];
         return self;
     };
